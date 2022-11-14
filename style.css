@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+
+#pokedex {
+    min-height: 50vh;
+    background-color: #FB6C6C;
+    color: white;
+    display: flex;
+}
+
+.head-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-container {
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    height: 100px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.pokemonFrontSprite {
+    height: 300px;
+    width: 300px;
+    margin-top: -150px;
+
+}
