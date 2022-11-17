@@ -2,11 +2,133 @@ body {
     margin: 0;
 }
 
+.progress{
+    width: 200px;
+}
+
+.progress-hp{
+    background-color: #69b676!important;
+}
+
+.progress-attack{
+    background-color: #c26c6c!important;
+}
+
+.progress-def{
+    background-color: #6c80c2!important;
+}
+
+.progress-spec-attack{
+    background-color: #cea86e!important;
+}
+
+.progress-spec-def{
+    background-color: #6ca0c2!important;
+}
+
+.progress-speed{
+    background-color: #b16cc2!important;
+}
+
+.d-none {
+    display: none;
+}
+
+.pokemon-name {
+    font-size: 60px;
+}
+
 #pokedex {
     min-height: 50vh;
-    background-color: #FB6C6C;
     color: white;
     display: flex;
+}
+
+.nav-link{
+    color: rgb(158, 158, 158)!important;
+    font-weight: 700!important;
+}
+
+.nav-link:hover{
+    color: rgb(0, 0, 0)!important;
+    font-weight: 700!important;
+}
+
+.red {
+    background-color: #FB6C6C;
+}
+
+.green {
+    background-color: #4AD0B1;
+}
+
+.blue {
+    background-color: #77BEFF;
+}
+
+.yellow {
+    background-color: #FFD86E;
+}
+
+.black {
+    background-color: #4e4e4e;
+}
+
+.brown {
+    background-color: #c9956b;
+}
+
+.gray {
+    background-color: #a7a5a4;
+}
+
+.pink {
+    background-color: #f790c4;
+}
+
+.purple {
+    background-color: #9f6ead;
+}
+
+.white {
+    background-color: #e1eceb;
+}
+
+
+
+.order-number {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+}
+
+.head-container {
+    display: flex;
+
+}
+
+.element-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    background-color: #ffffffd8;
+    border-radius: 10px;
+    color: black;
+    font-weight: 500;
+}
+
+.element-red{
+    background-color: #f09191d8;
+}
+
+.name-ele-container {
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .head-container {
@@ -18,15 +140,17 @@ body {
     background-color: white;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    height: 100px;
     margin-top: -40px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-box-shadow: 0px -2px 3px 0px rgba(119, 119, 119, 0.32);
+    -moz-box-shadow: 0px -2px 3px 0px rgba(119, 119, 119, 0.32);
+    box-shadow: 0px -2px 3px 0px rgba(119, 119, 119, 0.32);
 }
 
 .pokemonFrontSprite {
     height: 300px;
     width: 300px;
-    margin-top: -150px;
-
+    margin-top: -250px;
 }

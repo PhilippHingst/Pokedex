@@ -2,23 +2,40 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <title>Pokedex</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js"></script>
+  <script src="templates.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <title>Pokedex</title>
 </head>
 
 <body onload="loadPokemon()">
-    <div class="head-container" id="pokedex">
-        <h1 id="pokemonName"></h1>
-        <div class="element-box">Fire</div>
+  <div class="head-container" id="pokedex">
+    <div class="name-ele-container">
+      <div>
+        <h1 id="pokemonName" class="pokemon-name"></h1>
+        <div class="element-container">
+          <div id="element" class="element-box ">Fire</div>
+        </div>
+      </div>
+      <div class="order-number">
+        <p>#</p>
+        <p id="order"></p>
+      </div>
     </div>
-    <div class="info-container">
-        <img id="pokemonFrontSprite" class="pokemonFrontSprite" src=""></img>
+
+  </div>
+
+  <div class="info-container">
+    <img id="pokemonFrontSprite" class="pokemonFrontSprite" src=""></img>
+    <div id="statContent">
+
     </div>
+  </div>
+
 </body>
 
 </html>
