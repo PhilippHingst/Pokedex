@@ -2,9 +2,9 @@ function generateStatsContent(){
     return /*html*/`<div class="about-card">
     <table class="table table-borderless">
       <tbody>
-        <thead><b>Base Stats</b></thead>
+        <thead class="stat-font"><b>Base Stats</b></thead>
         <tr>
-          <td>HP</td>
+          <td class="stat-font">HP</td>
           <td>
             <div class="progress">
               <div class="progress-bar progress-hp" role="progressbar" aria-valuenow="40" aria-valuemin="0"
@@ -15,7 +15,7 @@ function generateStatsContent(){
           </td>
         </tr>
         <tr>
-          <td>Attack</td>
+          <td class="stat-font">Attack</td>
           <td>
             <div class="progress">
               <div class="progress-bar progress-attack" role="progressbar" aria-valuenow="100" aria-valuemin="0"
@@ -26,7 +26,7 @@ function generateStatsContent(){
           </td>
         </tr>
         <tr>
-          <td>Defense</td>
+          <td class="stat-font">Defense</td>
           <td>
             <div class="progress">
               <div class="progress-bar progress-def" role="progressbar" aria-valuenow="40" aria-valuemin="0"
@@ -37,7 +37,7 @@ function generateStatsContent(){
           </td>
         </tr>
         <tr>
-          <td>Special-Attack</td>
+          <td class="stat-font">Special-Attack</td>
           <td>
             <div class="progress">
               <div class="progress-bar progress-spec-attack" role="progressbar" aria-valuenow="40" aria-valuemin="0"
@@ -48,7 +48,7 @@ function generateStatsContent(){
           </td>
         </tr>
         <tr>
-          <td>Special-Defense</td>
+          <td class="stat-font">Special-Defense</td>
           <td>
             <div class="progress">
               <div class="progress-bar progress-spec-def" role="progressbar" aria-valuenow="40" aria-valuemin="0"
@@ -59,7 +59,7 @@ function generateStatsContent(){
           </td>
         </tr>
         <tr>
-          <td>Speed</td>
+          <td class="stat-font">Speed</td>
           <td>
             <div class="progress">
               <div class="progress-bar progress-speed" role="progressbar" aria-valuenow="40" aria-valuemin="0"
