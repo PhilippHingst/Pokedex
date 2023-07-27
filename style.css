@@ -2,6 +2,58 @@ body {
     margin: 0;
 }
 
+.about-card {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #ebebeb;
+    width: 350px;
+    margin: 0 auto;
+}
+
+
+
+
+/* ----------Suchfeld----------- */
+
+@font-face {
+    font-family: 'PokemonSolid';
+    src: url('PokemonSolid.ttf'); /* URL zu Ihrer Schriftartdatei */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.search-bar {
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+    display: inline-block;
+}
+
+#search-input {
+    border-radius: 15px; /* Sie können den Radius nach Belieben anpassen */
+    border-width: 1.4px;
+    border-color: #4e4e4e;
+    padding: 10px;
+    padding-right: 50px; /* Zusätzlicher Platz für den Button */
+    font-family: 'PokemonSolid', Arial, sans-serif; /* Wechseln Sie zu Arial oder sans-serif, wenn die Pokemon-Schriftart nicht geladen wird */
+    width: 300px;
+}
+
+button {
+    font-family: 'PokemonSolid', Arial, sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background:none;
+    border: none;
+}
+
+
+/* ----------Base Stats----------- */
+
 .progress{
     width: 200px;
 }

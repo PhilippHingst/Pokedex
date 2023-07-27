@@ -12,8 +12,17 @@
   <title>Pokedex</title>
 </head>
 
-<body onload="loadPokemon()">
+<body onload="loadPokemon(); loadPokemonNames();">
+  
+  
+  
   <div class="head-container" id="pokedex">
+    <div class="search-bar">
+    <input list="pokemonNames" type="text" id="search-input" placeholder="Search by name or number">
+    <datalist id="pokemonNames">
+    </datalist>
+    <button onclick="searchPokemon()">Suche</button>
+  </div>
     <div class="name-ele-container">
       <div>
         <h1 id="pokemonName" class="pokemon-name"></h1>
