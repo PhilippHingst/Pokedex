@@ -189,9 +189,11 @@ button {
 }
 
 .info-container {
-    background-color: white;
+    background-color: #ffffff; 
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    
+    
     margin-top: -40px;
     display: flex;
     align-items: center;
@@ -199,10 +201,34 @@ button {
     -webkit-box-shadow: 0px -2px 3px 0px rgba(119, 119, 119, 0.32);
     -moz-box-shadow: 0px -2px 3px 0px rgba(119, 119, 119, 0.32);
     box-shadow: 0px -2px 3px 0px rgba(119, 119, 119, 0.32);
+    position: relative;
+    padding-top: 100px; /* extra padding to accommodate the oversized sprite */
+    z-index: 1;
+}
+
+.stat-box{
+    border: 2px solid #dbdbdb;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
 
 .pokemonFrontSprite {
     height: 300px;
-    width: 300px;
-    margin-top: -250px;
+    width: 355px;
+    position: absolute;
+    top: -180px; /* adjust this value as needed to get the desired amount of overhang */
+    left: 50%;
+    transform: translateX(-50%); /* center the sprite horizontally */
+    background-color: #97c7df; /* blauer Hintergrund */
+    border: 2px solid #dbdbdb; /* Rand hinzufügen, der der Hintergrundfarbe des info-container entspricht */
+    border-top-left-radius: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    -webkit-box-shadow: 0px -2px 3px 0px rgba(119, 119, 119, 0.32);
+    -moz-box-shadow: 0px -2px 3px 0px rgba(119, 119, 119, 0.32);
+    box-shadow: 0px -2px 3px 0px rgba(119, 119, 119, 0.32);
+    z-index: 2;
 }
+
+
