@@ -2,14 +2,14 @@ body {
     margin: 0;
 }
 
-.about-card {
+/* .about-card {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 20px;
     background-color: #ebebeb;
     width: 350px;
     margin: 0 auto;
-}
+} */
 
 
 
@@ -18,7 +18,8 @@ body {
 
 @font-face {
     font-family: 'PokemonSolid';
-    src: url('PokemonSolid.ttf'); /* URL zu Ihrer Schriftartdatei */
+    src: url('PokemonSolid.ttf');
+    /* URL zu Ihrer Schriftartdatei */
     font-weight: normal;
     font-style: normal;
 }
@@ -31,12 +32,15 @@ body {
 }
 
 #search-input {
-    border-radius: 15px; /* Sie können den Radius nach Belieben anpassen */
+    border-radius: 15px;
+    /* Sie können den Radius nach Belieben anpassen */
     border-width: 1.4px;
     border-color: #4e4e4e;
     padding: 10px;
-    padding-right: 50px; /* Zusätzlicher Platz für den Button */
-    font-family: 'PokemonSolid', Arial, sans-serif; /* Wechseln Sie zu Arial oder sans-serif, wenn die Pokemon-Schriftart nicht geladen wird */
+    padding-right: 50px;
+    /* Zusätzlicher Platz für den Button */
+    font-family: 'PokemonSolid', Arial, sans-serif;
+    /* Wechseln Sie zu Arial oder sans-serif, wenn die Pokemon-Schriftart nicht geladen wird */
     width: 300px;
 }
 
@@ -47,39 +51,39 @@ button {
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
-    background:none;
+    background: none;
     border: none;
 }
 
 
 /* ----------Base Stats----------- */
 
-.progress{
+.progress {
     width: 200px;
 }
 
-.progress-hp{
-    background-color: #69b676!important;
+.progress-hp {
+    background-color: #69b676 !important;
 }
 
-.progress-attack{
-    background-color: #c26c6c!important;
+.progress-attack {
+    background-color: #c26c6c !important;
 }
 
-.progress-def{
-    background-color: #6c80c2!important;
+.progress-def {
+    background-color: #6c80c2 !important;
 }
 
-.progress-spec-attack{
-    background-color: #cea86e!important;
+.progress-spec-attack {
+    background-color: #cea86e !important;
 }
 
-.progress-spec-def{
-    background-color: #6ca0c2!important;
+.progress-spec-def {
+    background-color: #6ca0c2 !important;
 }
 
-.progress-speed{
-    background-color: #b16cc2!important;
+.progress-speed {
+    background-color: #b16cc2 !important;
 }
 
 .d-none {
@@ -96,14 +100,14 @@ button {
     display: flex;
 }
 
-.nav-link{
-    color: rgb(158, 158, 158)!important;
-    font-weight: 700!important;
+.nav-link {
+    color: rgb(158, 158, 158) !important;
+    font-weight: 700 !important;
 }
 
-.nav-link:hover{
-    color: rgb(0, 0, 0)!important;
-    font-weight: 700!important;
+.nav-link:hover {
+    color: rgb(0, 0, 0) !important;
+    font-weight: 700 !important;
 }
 
 .red {
@@ -170,7 +174,7 @@ button {
     font-weight: 500;
 }
 
-.element-red{
+.element-red {
     background-color: #f09191d8;
 }
 
@@ -188,47 +192,59 @@ button {
     flex-direction: column;
 }
 
-.info-container {
-    background-color: #ffffff; 
+
+
+.background-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #ffffff;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    
-    
-    margin-top: -40px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     -webkit-box-shadow: 0px -2px 3px 0px rgba(119, 119, 119, 0.32);
     -moz-box-shadow: 0px -2px 3px 0px rgba(119, 119, 119, 0.32);
     box-shadow: 0px -2px 3px 0px rgba(119, 119, 119, 0.32);
-    position: relative;
-    padding-top: 100px; /* extra padding to accommodate the oversized sprite */
-    z-index: 1;
 }
 
-.stat-box{
-    border: 2px solid #dbdbdb;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 55px !important;
+    border-top-right-radius: 17px !important;
+    border-bottom-left-radius: 35px !important;
+    border-bottom-right-radius: 35px !important;
+    top: -280px;
+    width: 350px;
+    background-color: #b3b3b3 !important;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    /* Zentriert die Karte horizontal */
+
 }
 
 .pokemonFrontSprite {
-    height: 300px;
-    width: 355px;
-    position: absolute;
-    top: -180px; /* adjust this value as needed to get the desired amount of overhang */
-    left: 50%;
-    transform: translateX(-50%); /* center the sprite horizontally */
-    background-color: #97c7df; /* blauer Hintergrund */
-    border: 2px solid #dbdbdb; /* Rand hinzufügen, der der Hintergrundfarbe des info-container entspricht */
-    border-top-left-radius: 40px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    -webkit-box-shadow: 0px -2px 3px 0px rgba(119, 119, 119, 0.32);
-    -moz-box-shadow: 0px -2px 3px 0px rgba(119, 119, 119, 0.32);
-    box-shadow: 0px -2px 3px 0px rgba(119, 119, 119, 0.32);
-    z-index: 2;
+    max-width: 92%;
+    
+    background-color: #a9cfda !important;
+    border-top-left-radius: 40px !important;
+    border-top-right-radius: 12px !important;
+
+    /* stellt sicher, dass das Bild nicht über die Karte hinausgeht */
+    margin-bottom: 1px;
+    margin-top: 20px;
+
 }
 
-
+.stat-box {
+    max-width: 92%;
+    text-align: center;
+    background-color: #cfcece !important;
+    border-bottom-left-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
+    /* Zentriert den Inhalt der Stat-Box */
+    margin-bottom: 15px;
+}
